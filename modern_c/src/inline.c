@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include "gen.h"
 
+/*
 int main(int argc, char const *argv[])
 {
     float a = 1.2;
@@ -9,3 +10,4 @@ int main(int argc, char const *argv[])
     printf("MIN(1.2,4.5) = %f\n",result);
     return 0;
 }
+*/
