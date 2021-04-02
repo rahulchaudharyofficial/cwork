@@ -17,9 +17,10 @@
         printf("%s - %s - %d\n",__FILE__,__func__, __LINE__);      \
     }                                               \
     while(0)
-
+/*
 int main(int argc, char const *argv[])
 {
         TRACE();
     return 0;
 }
+*/

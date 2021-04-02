@@ -1,6 +1,8 @@
 #Compiler setup
-CC=clang
-CFLAGS=-Wall -g
+CLANGC=clang
+GCCC=gcc
+CC=$(CLANGC)
+CFLAGS=-Wall -g -std=c11 -pedantic -Werror
 
 #Documentation
 DOCTOOL=doxygen
