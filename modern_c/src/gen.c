@@ -10,13 +10,15 @@
  */
 
 #include<stdio.h>
-#include "./gen.h"
+#include "gen.h"
+/*
+float min_f(float a, float b) {
+    printf("without inline implementation\n");
+    return a<b?a:b;
+}
+*/
 
-int main(int argc, char const *argv[])
+void demo(void) 
 {
-    float a = 1.2;
-    float b = 4.5;
-    float result = MIN(a,b);
-    printf("MIN(1.2,4.5) = %f\n",result);
-    return 0;
+    printf("Demo is called\n");
 }

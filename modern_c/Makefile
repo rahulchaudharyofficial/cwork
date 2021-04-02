@@ -2,7 +2,7 @@
 CLANGC=clang
 GCCC=gcc
 CC=$(CLANGC)
-CFLAGS=-Wall -g -std=c11 -pedantic -Werror
+CFLAGS=-Wall -g
 
 #Documentation
 DOCTOOL=doxygen
@@ -26,7 +26,6 @@ SRCS=$(wildcard $(SRCDIR)/*.c)
 ALLFILES=$(SRCS)
 OBJS=$(patsubst $(SRCDIR)/%.c, $(OBJDIR)/%.o, $(SRCS))
 BIN=$(BINDIR)/main
-
 
 all:$(BIN)
 
