@@ -2,10 +2,11 @@
 CC=clang
 CFLAG=-Wall -g
 
-hello: size hello.o
-	$(CC) $(CFLAG) -o hello *.o
-hello.o:
-	$(CC) $(CFLAG) -c *.c
+hello: hello.o
+	$(CC) $(CFLAG) -o hello $<
+
+hello.o: hello.c
+	$(CC) $(CFLAG) -c $<
 
 .PHONY: clean
 clean:
